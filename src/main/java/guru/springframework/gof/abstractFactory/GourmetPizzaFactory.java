@@ -8,7 +8,6 @@ import guru.springframework.gof.abstractFactory.product.VeggiePizza;
 
 public class GourmetPizzaFactory extends BasePizzaFactory {
 
-
     @Override
     public  Pizza createPizza(String type){
         Pizza pizza;
