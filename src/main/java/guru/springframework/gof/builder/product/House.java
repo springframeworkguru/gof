@@ -1,8 +1,5 @@
 package guru.springframework.gof.builder.product;
 
-/**
- * Created by Admin on 4/16/2015.
- */
 public class House {
     private String foundation;
     private String structure;

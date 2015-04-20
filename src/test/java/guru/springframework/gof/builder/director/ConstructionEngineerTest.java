@@ -6,9 +6,6 @@ import guru.springframework.gof.builder.builders.PrefabricatedHouseBuilder;
 import guru.springframework.gof.builder.product.House;
 import org.junit.Test;
 
-/**
- * Created by Admin on 4/16/2015.
- */
 public class ConstructionEngineerTest {
 
     @Test
@@ -21,7 +18,5 @@ public class ConstructionEngineerTest {
         ConstructionEngineer engineerB = new ConstructionEngineer(prefabricatedHouseBuilder);
         House houseB = engineerB.constructHouse();
         System.out.println("House is: "+houseB);
-
-
     }
 }
