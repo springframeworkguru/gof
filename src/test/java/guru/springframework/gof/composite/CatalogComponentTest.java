@@ -4,9 +4,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by Admin on 7/1/2015.
- */
 public class CatalogComponentTest {
 
     @Test
