@@ -10,7 +10,7 @@ public class MotherBoard {
         System.out.println("Hard disk added to motherboard..");
     }
     public void addCpu(Cpu cpu){
-
+        this.cpu=cpu;
         System.out.println("CPU added to motherboard..");
     }
     public void addRam(Ram ram){
