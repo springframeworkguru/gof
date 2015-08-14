@@ -10,9 +10,9 @@ public class ReportGeneratorImplProxyTest {
     public void testGenerateReport() throws Exception {
         Role accessRole=new Role();
         accessRole.setRole("Manager");
-        ReportGeneratorImplProxy proxy=new ReportGeneratorImplProxy("Pdf",50, accessRole);
-        proxy.displayReportTemplate();
-        proxy.generateComplexReport("Pdf",50);
+        ReportGenerator proxy=new ReportGeneratorImplProxy(accessRole);
+        proxy.displayReportTemplate("Pdf",150);
+        proxy.generateComplexReport("Pdf",150);
         proxy.generateSensitiveReport();
     }
 }

@@ -3,17 +3,14 @@ package guru.springframework.gof.proxy;
 
 public class ReportGeneratorImplProxy implements ReportGenerator{
     ReportGenerator reportGeneratorImpl;
-    private String reportFormat;
-    private int reportEntries;
     private Role accessRole;
-    public ReportGeneratorImplProxy(String reportFormat, int reportEntries, Role accessRole){
-        this.reportFormat=reportFormat;
-        this.reportEntries=reportEntries;
-        this.accessRole=accessRole;
+    public ReportGeneratorImplProxy(Role accessRole){
+            this.accessRole=accessRole;
     }
 
-    public void displayReportTemplate() {
-        System.out.println("ReportGeneratorImplProxy: Displaying Report template in " + this.reportFormat + " format with " + this.reportEntries + " entries");
+    @Override
+    public void displayReportTemplate(String reportFormat,int reportEntries) {
+        System.out.println("ReportGeneratorImplProxy: Displaying blank report template in " + reportFormat + " format with " + reportEntries + " entries");
     }
 
     @Override
