@@ -10,15 +10,15 @@ public class PizzaMakerTest {
     @Test
     public void testMakePizza() throws Exception {
         System.out.println("-----Making Veg Pizza-----");
-        VegPizzaMaker vegPizzaMaker = new VegPizzaMaker();
+        PizzaMaker vegPizzaMaker = new VegPizzaMaker();
         vegPizzaMaker.makePizza();
 
         System.out.println("-----Making Non Veg Pizza-----");
-        NonVegPizzaMaker nonVegPizzaMaker = new NonVegPizzaMaker();
+        PizzaMaker nonVegPizzaMaker = new NonVegPizzaMaker();
         nonVegPizzaMaker.makePizza();
 
         System.out.println("-----Making In-House Assorted Pizza-----");
-        InHouseAssortedPizzaMaker inHouseAssortedPizzaMaker = new InHouseAssortedPizzaMaker();
+        PizzaMaker inHouseAssortedPizzaMaker = new InHouseAssortedPizzaMaker();
         inHouseAssortedPizzaMaker.makePizza();
 
 
